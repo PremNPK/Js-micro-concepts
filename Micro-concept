@@ -1,1 +1,305 @@
+/* let a=[];
+let b=[];
+console.log(a==b);	=>false*/ 
 
+ /* let a=[];
+ let b=a;
+ console.log(b);	=>[]*/
+ 
+ /* let a=[];
+ let b=a;
+ console.log(a==b);	=>true */
+ 
+ /* let a=[1];
+ let b=[1];
+ console.log(a[0]==b[0]);	=>true */
+ 
+ /* let a=[1,2,3];
+ let b={name:"keerthi"};
+ console.log(...a);	=>all element come out from object/array. */
+ 
+ /* console.log(typeof NaN);	=>number */
+ 
+ /* let data= 10 - -10;
+ console.log(data);	=>20 */
+ 
+ /* let data= 10 + "-10";
+ console.log(data);	=>10-10 */
+ 
+/* let data= 10 + -"10";
+ console.log(data);	=>0 */
+ 
+/*  let data=10 + 5 *2;
+ console.log(data);	=>20 */
+ 
+/* let data= "zxcvbnmasdfghjklqwertyuiop";
+console.log(data.length);	=>26 */
+
+/* let data={name:'prem'};
+console.log(delete data.name);	=>true
+console.log(data);	=>{}*/
+
+/* let data={name:'prem'};
+console.log(delete data);	=>false*/
+
+/* const data=['surya','prem','raj'];
+const a=data;
+console.log(a);	=>["surya", "prem", "raj"]*/
+
+/* const data=['surya','prem','raj'];
+const [a]=data;
+console.log(a);	We  are doing destructuring here.So a returns 
+first value.	=>"surya"*/
+
+/* const data=['surya','prem','raj'];
+const [a,b]=data;
+console.log(a,b);	 =>"surya", "prem" */
+
+/* const data=['surya','prem','raj'];
+const [,,c]=data;
+console.log(c);	=>"raj"*/
+
+/* const data={name:"prem"};
+const data1={city:"bengalore"};
+const value={...data,...data1};
+console.log(value);	=>city: "bengalore",name: "prem" */
+
+/* const data={name:"prem"};
+const data1={city:"bengalore"};
+const value={data,...data1};
+console.log(value);	=>city: "bengalore",data: {name: "prem"} */
+
+/* const val=false  || null || 98 ||true;
+console.log(val);	=>OR Operator finds the first positive value.=>98 */
+
+/* const val={} || null || 98 ||true;
+console.log(val);	 =>{ ... } */
+
+/* console.log(Promise.resolve(24));=>While doing resolve,itself a promise. =>[object Promise] { ... } */
+
+/* let name='prem';
+function getName(){
+    console.log(name);	=>Uncaught ReferenceError
+    let name='surya';
+}
+getName();	=>Hoisting is used here. */
+
+/* var name='prem';
+function getName(){
+    console.log(name);
+    var name='surya';
+}
+getName()	=>undefined */
+
+/* getName();
+console.log(x);
+var x=24;
+function getName(){
+console.log("Vannakam Bangalore");
+}	=>"Vannakam Bangalore",undefined */
+
+/* getName();
+console.log(x);
+var x=24;
+function getName(){
+console.log("Vannakam Bangalore");
+}
+console.log(getName);	=>Returns a function */
+
+/* console.log(getName);
+console.log(x);
+var x=24;
+function getName(){
+console.log("Vannakam Bangalore");
+}	 =>It also returns a function. */
+
+/* console.log((x=>x)("I Love Bangalore"));		=>"I Love Bangalore" */
+
+/* console.log(`${(x=>x)('I like to visit')} more place`);		=>Template literal used here.we use arrow function to returing a string.	=>"I like to visit more place" */
+
+/* const val="I likes sandwich";
+console.log(typeof name);		=>"string"
+console.log(!typeof name);		=>false
+console.log(!typeof name==='object');	=>false
+console.log(!typeof name==false);		=>true */
+
+/* const name="keerthi";
+const age=24;
+console.log(isNaN(name));	=>true
+console.log(isNaN(age));	=>false */
+
+/* const person=	{name:"Keerthi"}
+Object.seal(person);
+person.age=24;
+person.name="prem";
+console.log(person);	=>Once we seal it we can't able to add new keys but we able change values of existing one.	=>name: "prem" */
+
+/* const val=[1,2,3,4,5,6];
+val.shift();
+console.log(val);	=>[2, 3, 4, 5, 6]
+val.pop();
+console.log(val);	shift and pop used to remove elements in first and last index.	=>[2, 3, 4, 5]. */
+
+/* let a=10;
+console.log(a%2===0 ? true : false);	=>true */
+
+/* let data=true;
+console.log(!typeof data);	=>false
+console.log(typeof !data);	=>"boolean". */
+
+/* let data=true;
+console.log(!!typeof data);	=>true
+console.log(typeof data);	=>"boolean". */
+
+/* let data=["prem","surya","raj"];
+delete data[1];
+console.log(data);	=>["prem", undefined, "raj"] */
+
+/* let a=[1,2,3,4];
+let b=[4,5,6];
+let c=[...a,...b];
+console.log(c);		=>[1, 2, 3, 4, 4, 5, 6]*/
+
+/* let a=24;
+setTimeout(()=>{
+console.log(a);
+},2000);
+ a=100;		=>100 */
+ 
+/* const myarray=['one','two','three'];
+myarray.mymethod=function(sProperty){
+console.log(arguments.length > 0 ? this[sProperty] : this);
+}
+myarray.mymethod();
+myarray.mymethod(2); */
+
+/* let a=24;
+console.log(--a);	=>23 */
+
+/* let a=10;
+let b=5;
+console.log(--a + b);	=> */
+
+/* let a=5;
+let b=6;
+console.log(a==--b);	=>true */
+
+/* console.log(3**3);
+console.log(3***3);	=>It does not exits in js. */
+
+/* console.log(a);
+var a=10;		=>undefined */
+
+/* console.log(a);	=>ReferenceError */
+
+/* function val(){
+console.log(name);	=>undefined
+console.log(age);	=>Reference error
+var name='Prem';
+let age=25;
+}
+val(); */
+
+/* for(var i=0; i<3;i++){
+setTimeout(()=>console.log(i),1)	=>3,3,3
+} */
+
+/* for(let i=0; i<3;i++){
+setTimeout(()=>console.log(i),1)	=>0,1,2	
+} */
+
+/* console.log(true);	=>true
+console.log(+true);	=>1 */
+
+/* var x;
+var x=10;
+console.log(x);	=>10 */
+
+/* var x;
+let x=10;
+console.log(x);	=>can't declare multiple times LET. */
+
+/* var a=24;
+var b=new Number(3);
+console.log(a == b);	=>false
+console.log(typeof b);	=>object */
+
+/* function app(){
+console.log("HI PK");	=>"HI PK"
+}
+app.name="ksr"
+app(); */
+
+/* function getAge(...args){
+console.log(typeof args);	=>object
+}
+getAge(25); */
+
+/* var num=eval('10*10+5');
+console.log(num);	=>105 */
+
+/* const obj={a:'one',b:'two',a:'three'}
+console.log(obj);	=>Key position will remain same but value get updated new value in object =>a: "three",b: "two" */
+
+/* for(let i=0;i<5;i++){
+if(i==3) continue;
+console.log(i);		=>During i==3 it not enter to print i=>0,1,2,4
+} */
+
+/* let p=()=>console.log('Prem');
+let k=()=>setTimeout(()=>console.log('Keerthi'));
+let d=()=>console.log('Devi');
+p();
+k();
+d();		=>"Prem" "Devi" "Keerthi". */
+
+/* const person={name:'prem'};
+function sayhi(age){
+return `${this.name} age is ${age}`
+}
+console.log(sayhi.call(person,25));		=>"prem age is 25"
+console.log(sayhi.bind(person,25));		=>function () { [native code] }
+console.log(sayhi.bind(person,25)());		=>"prem age is 25"*/
+
+/* console.log(typeof typeof 1);		=>string */
+
+/* console.log(!null);		=>true
+console.log(!!null);	=>false
+console.log(!1);		=>false
+console.log(!!1);		=>true */
+
+/* console.log(setInterval(()=>console.log('prem'),1000); */
+
+/* const firstPromise= new Promise((res,rej)=>{
+setTimeout(res,500,'one');
+})
+const secondPromise= new Promise((res,rej)=>{
+setTimeout(res,100,'second');
+})
+Promise.race([firstPromise,secondPromise]).then(res=>console.log(res));		=>second */
+
+/* const person={name:'prem',age:24};
+for(const item in person){
+console.log(item);
+}		=>"name" "age" */
+
+/* let data=[1,2,3].map(num=>{
+if (typeof num == 'number') 
+return num*2;
+})
+console.log(data);	=>[2, 4, 6] */
+
+/* let data=[1,2,3].map(num=>{
+if (typeof num == 'number') return; 
+return num*2;
+})
+console.log(data)	=>If returns means it will print undefined.
+=>[undefined, undefined, undefined] */
+
+function car(){
+this.make='tata';
+return {make:'kia'};
+}
+const val =new car();
+console.log(val.make);	=>"kia".
+ 
