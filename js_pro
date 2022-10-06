@@ -1,1 +1,17 @@
-
+/*Amstrong Number*/
+let sum=0;
+const num=prompt("Enter the three digit number ")
+let temp=num;
+let rem;
+while(temp>0){
+  rem=temp%10;
+  sum+=rem*rem*rem;
+  temp=parseInt(temp/10);  
+}
+if(num){
+  console.log("Enter number is a Amstrong number");
+}
+else{
+  console.log("Enter number is not a Amstrong number");
+}
+---------------------------------------------------
