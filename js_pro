@@ -15,3 +15,13 @@ else{
   console.log("Enter number is not a Amstrong number");
 }
 ---------------------------------------------------
+/*shortcuts*/
+Before:
+if(event==='click' || event==='submit' || event==='keydown'){
+//
+}
+After:
+if(['click','submit','keydown'].includes(event)){
+//
+}
+------------------------------------------------------
