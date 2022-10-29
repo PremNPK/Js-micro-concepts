@@ -14,7 +14,14 @@ var remove=[...new Set(arr)]
 console.log(remove) //output:[40, 50, 7, 8, 24, 2, 4, 5, 9]
 console.log(remove.length) //output:9
 ***********************************************************************************************************************************************************************
-
+Code 3:String reverse
+function letterReverse(){
+  var str="I love bangalore"
+  let result=str.split('').reverse().join('')
+  return result
+}
+console.log(letterReverse()) //output:"erolagnab evol I"
+************************************************************************************************************************************************************************
 
 
 
