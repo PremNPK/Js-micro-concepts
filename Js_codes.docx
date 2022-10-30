@@ -22,7 +22,22 @@ function letterReverse(){
 }
 console.log(letterReverse()) //output:"erolagnab evol I"
 ************************************************************************************************************************************************************************
-
+Code 4: Find factorial of user input number
+const number=parseInt(prompt('Enter your number:'))
+if(number<0){
+  console.log("Error! Factorial of negative number does not exits.")
+}
+else if(number===0){
+  console.log('The factorial is 1.')
+}
+else{
+  fact=1;
+  for(i=1;i<=number;i++){
+    fact*=i;
+  }
+  console.log(`The factorial is ${fact}`);  //output:"The factorial is 6"
+}
+************************************************************************************************************************************************************************
 
 
 
