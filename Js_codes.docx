@@ -32,12 +32,29 @@ else if(number===0){
 }
 else{
   fact=1;
-  for(i=1;i<=number;i++){
+  for(i=1;i<=number;i++)
+  {
     fact*=i;
   }
   console.log(`The factorial is ${fact}`);  //output:"The factorial is 6"
 }
 ************************************************************************************************************************************************************************
+Code 5: To find longest word from a string using (for of)
+function longestWord(){
+  let str="Prem native is at pidaripatty currently in bangalore"
+  var words=str.split(' ')
+  var longest=' '
+  for(var word of words){
+    console.log(word) 
+    if(word.length > longest.length)
+    {
+      longest=word
+    }    
+  }
+  return longest.length
+}
+console.log(longestWord()) //output:11
+******************************************************************************************************************************************************************************
 
 
 
