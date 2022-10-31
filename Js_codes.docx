@@ -55,7 +55,16 @@ function longestWord(){
 }
 console.log(longestWord()) //output:11
 ******************************************************************************************************************************************************************************
-
+Code 6: To find longest word from a string using functions
+function findLongestWord(){
+  let str="prem is a goog boy and he capable of doing anything in the world"
+  let wordstr=str.split(' ').sort((a,b)=>{
+    return b.length-a.length    
+  })
+  console.log(wordstr[0])
+}
+findLongestWord()  //output:"anything"
+******************************************************************************************************************************************************************************
 
 
 
