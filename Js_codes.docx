@@ -65,7 +65,19 @@ function findLongestWord(){
 }
 findLongestWord()  //output:"anything"
 ******************************************************************************************************************************************************************************
-
+Code 7: To find longest common string from array of strings
+function longestCommonString(){
+  array=['go','got','google']
+  var arr=array.sort()
+  var i=0
+  while(arr[0].length>0 && arr[0].charAt(i)===arr[arr.length-1].charAt(i)){
+    i++
+  }
+  console.log(arr[0].substring(0,i)) //output:"go"
+  return arr[0].substring(0,i)
+}
+longestCommonString()
+***************************************************************************************************************************************************************************
 
 
 
