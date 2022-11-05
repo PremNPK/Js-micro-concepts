@@ -78,7 +78,22 @@ function longestCommonString(){
 }
 longestCommonString()
 ***************************************************************************************************************************************************************************
-
+Code 8: To find vowels and its count in a given string
+function vowelCounts(){
+  vowels=['a','e','i','o','u']
+  var str='prem'
+  count=0
+  for(var letter of str.toLowerCase()){
+    if(vowels.includes(letter)){
+      count++
+      console.log(letter)  //output:"e"
+    }
+  }
+  console.log(count)  //output:1
+  return count
+}
+vowelCounts()
+**********************************************************************************************************************************************************************************
 
 
 
