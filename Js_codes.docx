@@ -124,7 +124,14 @@ function findSumIndex(array){
 const result=findSumIndex([-3,-2,-1,0,1,2,3,4])
 console.log(result) //output:[-3, 3]
 ****************************************************************************************************************************************************************************************
-
+Code 11: To find the largest pair of the 2 elements using indexing with unsorted elements
+function largestPair(number){
+  let num=number.sort((a,b)=>b-a)
+  return num[0]+num[1]
+}
+const result=largestPair([4,5,6,2,3,8,9,7])
+console.log(result) //output:17
+**********************************************************************************************************************************************************************************
 
 
 
