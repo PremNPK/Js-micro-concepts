@@ -148,9 +148,19 @@ function fibonacciSeries(){
 }
 console.log(fibonacciSeries()) //output:[0, 1, 1, 2, 3, 5, 8]
 *********************************************************************************************************************************************************************************
-
-
-
+Code 11: Finding a missing elements in an array and then add with existing elements.
+function missingElement(){
+  var a=[1,2,5]
+  var missing=[]
+  for(i=1;i<6;i++){
+    if(a.indexOf(i)==-1){
+      missing.push(i)
+    }
+  }
+  console.log(a.concat(missing).sort()) //output:[1, 2, 3, 4, 5]
+}
+missingElement()
+************************************************************************************************************************************************************************************
 
 
 
