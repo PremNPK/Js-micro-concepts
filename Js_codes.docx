@@ -226,7 +226,17 @@ function firstDuplicate(){
 }
 firstDuplicate()
 **********************************************************************************************************************************************************************************
-
+Code 15: Uppercase of each first letter of a words using map function
+function changeFirstLetter(){
+  var string='i love bangalore'
+  var words=string.toLowerCase().split(' ')
+  for(var i=0;i<words.length;i++){
+    words[i]=words[i][0].toUpperCase() + words[i].slice(1)
+  }
+  return words.join(" ")
+}
+console.log(changeFirstLetter()) //output:"I Love Bangalore"
+******************************************************************************************************************************************************************************
 
 
 
