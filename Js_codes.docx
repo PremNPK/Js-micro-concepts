@@ -254,7 +254,20 @@ function largestFromArray(arr){
 }
 largestFromArray([[1,2,3,4],[56,89,45,78],[98,5,6]])
 ********************************************************************************************************************************************************************************
-
+Code 17: To find the largest elements for the 2 dimensional array in another way
+function largestOneElement(arr){
+  var max=[0,0,0]
+  for(var i=0;i<arr.length;i++){
+    for(var j=0;j<arr[i].length;j++){
+      if(arr[i][j]>=max[i]){
+        max[i]=arr[i][j]
+      }
+    }
+  }
+  console.log(max) //output:[4, 89, 98]
+}
+largestOneElement([[1,2,3,4],[56,89,45,78],[98,5,6]])
+*****************************************************************************************************************************************************************************
 
 
 
