@@ -237,6 +237,23 @@ function changeFirstLetter(){
 }
 console.log(changeFirstLetter()) //output:"I Love Bangalore"
 ******************************************************************************************************************************************************************************
+Code 16: To find the largest elements fro the 2 dimensional array
+function largestFromArray(arr){
+  var max=[]
+  for(let i=0;i<arr.length;i++){
+    var tempMax=arr[i][0]
+    for(let j=0;j<arr[i].length;j++){
+      var curMax=arr[i][j]
+      if(curMax>=tempMax){
+        tempMax=curMax
+      }
+    }
+    max.push(tempMax)
+  }
+  console.log(max) //output:[4, 89, 98]
+}
+largestFromArray([[1,2,3,4],[56,89,45,78],[98,5,6]])
+********************************************************************************************************************************************************************************
 
 
 
