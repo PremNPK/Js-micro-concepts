@@ -275,7 +275,17 @@ function repeatValue(str,num){
 }
 console.log(repeatValue("pk",5))  //output:"pkpkpkpkpk"
 *************************************************************************************************************************************************************************************
-
+Code 19: Converting one dimensional array into n dimensional array using slice
+function chunkArray(arr,num){
+  var group=[]
+  while(arr.length>0){
+    group.push(arr.slice(0,num))
+    arr=arr.slice(num)
+  }
+  return group
+}
+console.log(chunkArray(['a','b','c','d'],2)) //output:[["a", "b"], ["c", "d"]]
+**********************************************************************************************************************************************************************************
 
 
 
