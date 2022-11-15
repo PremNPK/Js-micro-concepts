@@ -294,5 +294,71 @@ function removeFalseValue(arr){
 }
 console.log(removeFalseValue([true,false,'prem',0,8,'bangalore'])) //output:[true, "prem", 8, "bangalore"]
 **********************************************************************************************************************************************************************************
+Code 21: Checking all letters of second words should present in first word, in the same order using include function
+function checkLetter(arr){
+  var first=arr[0].toLowerCase()
+  var second=arr[1].toLowerCase()
+  for(var letter of second){
+    if(!first.includes(second))
+      return false
+  }
+  return true
+}
+console.log(checkLetter(['bangalore','bang'])) //output:true
+***************************************************************************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
