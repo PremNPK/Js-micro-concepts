@@ -323,7 +323,18 @@ function  diffElement(arr1,arr2){
 }
 console.log(diffElement([1,2,3,4],[2,3,4,5])) //output:[1, 5]
 ****************************************************************************************************************************************************************************************
-
+code 23: Sum of all numbers from start to end given number
+function sumElement(arr){
+  sum=0
+  let start=Math.min(arr[0],arr[1])
+  let end=Math.max(arr[0],arr[1])
+  for(var i=start;i<=end;i++){
+    sum+=i
+  }
+  return sum
+}
+console.log(sumElement([0,5])) //output:15
+*****************************************************************************************************************************************************************************************
 
 
 
