@@ -351,6 +351,23 @@ function reverseNumber(input){
 }
 console.log(reverseNumber(-123)) //output:-321
 *********************************************************************************************************************************************************************************
+Code 26: Currying function i.e sum of multiple argument functions //inner function can access outer function variables but outer functions can't able to acceess inner function.
+function sum(a){
+  return function sum(b){
+    return function sum(c){
+      return function sum(d){
+         return a+b+c+d;
+      }
+    }
+  }
+}
+console.log(sum(1)(2)(3)(4)) //output:10
+
+OR
+
+const sum = (a) => (b) => (c) => (d) => a+b+c+d // using ES6
+console.log(sum(1)(2)(3)(4)) //output:10
+***********************************************************************************************************************************************************************************
 
 
 
