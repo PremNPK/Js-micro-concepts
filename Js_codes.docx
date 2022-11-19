@@ -395,10 +395,38 @@ function reverseNumber(num){
 }
 console.log(reverseNumber(123)) //output:321
 **********************************************************************************************************************************************************************************
+code 30: Check Armstrong Number
+function armstrongNumber(num){
+  var temp=num
+  var result=0
+  var a
+  while(temp!=0){
+    a=temp%10
+    temp=parseInt(temp/10)
+    result=result+a*a*a
+  }
+  if(num==result){
+    return true
+  }
+  else{
+    return false
+  }
+}
+console.log(armstrongNumber(153)) //output:true
+**********************************************************************************************************************************************************************************
+code 31: To find the closest number in an array
+// let needle = 5;
+// let number = [1, 3, 10, 2, 7, 4, 9];
+// number.sort((a, b) => {
+//   console.log(Math.abs(needle - a));
+//   return Math.abs(needle - a) - Math.abs(needle - b);
+// });
+// console.log(number[0]); //output:4
 
-
-
-
+const num = [10, 5, 20];
+num.sort((a, b) => a - b);
+console.log(num); //output:[ 5, 10, 20 ]
+*********************************************************************************************************************************************************************************
 
 
 
