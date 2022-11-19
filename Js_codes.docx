@@ -383,7 +383,7 @@ Code 28: Convert 2D/3D array into 1D using reduce function and inbuilt function 
 const arr=[['a','b'],['c','d',['e','d']]]
 console.log(arr.flat(2)) //output:["a", "b", "c", "d", "e", "d"]
 **********************************************************************************************************************************************************************************
-code 29: Reverse of a nuber
+code 29: Reverse of a number
 function reverseNumber(num){
   var result=0
   while(num!=0){
