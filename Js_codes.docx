@@ -427,7 +427,19 @@ const num = [10, 5, 20];
 num.sort((a, b) => a - b);
 console.log(num); //output:[ 5, 10, 20 ]
 *********************************************************************************************************************************************************************************
-
+code 31: To check whether particular word/number present in sentence or not using custom function
+function validateChar(arr,item){
+  var status="Not exits"
+  for(var i=0;i<arr.length;i++){
+    if(arr[i]===item){
+      status="Exits"
+      break
+    }
+  }
+  return status
+}
+console.log(validateChar(['Hi','Prem'],'Prem'))  //output:"Exits"
+*********************************************************************************************************************************************************************************
 
 
 
