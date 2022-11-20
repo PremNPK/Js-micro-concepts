@@ -440,7 +440,13 @@ function validateChar(arr,item){
 }
 console.log(validateChar(['Hi','Prem'],'Prem'))  //output:"Exits"
 *********************************************************************************************************************************************************************************
-
+code 32: To check wheather property exist or not in object
+let city={
+  name:'Bangalore',
+  state:'Karnataka'
+}
+console.log(city.hasOwnProperty('name')) //output:true
+*********************************************************************************************************************************************************************************
 
 
 
