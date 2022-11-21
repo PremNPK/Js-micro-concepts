@@ -471,7 +471,20 @@ let alt="Prem Bangalore"
 alt=alt.split('').map((letter,index)=>(index%2==0)?letter.toUpperCase():letter.toLowerCase()).join('')
 console.log(alt) //output:"PrEm bAnGaLoRe"
 ************************************************************************************************************************************************************************************
-
+code 36: To find the negative values in an array or 2D Array
+function countNegative(arr){
+  let count =0
+  for(let i=0;i<arr.length;i++){
+    for(let j=0;j<arr[i].length;j++){
+      if(arr[i][j]>0){
+        count++
+      }
+    }
+  }
+  return count
+}
+console.log(countNegative([[1,-1],[2,-2]])) //output:2
+*************************************************************************************************************************************************************************************
 
 
 
