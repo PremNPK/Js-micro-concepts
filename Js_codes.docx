@@ -501,7 +501,27 @@ function repeatIndex(arr){
 }
 console.log(repeatIndex([1,2,3,4,1,1,2])) //output:4
 ************************************************************************************************************************************************************************************
-
+code 38: To find the maximum repetation of the character in a string
+function maxRepeat(str){
+  var count=0
+  var character=str[0]
+  for(let i=0;i<str.length;i++){
+    var tempcount=1
+    for(let j=i+1;j<str.length;j++){
+      if(str[i]==str[j]){
+        tempcount++
+      }
+      if(tempcount>count){
+        count=tempcount
+        character=str[i]
+      }
+    }
+  }
+  console.log(character,count ) //output:"e",13
+  return character
+}
+maxRepeat('pppprrrrrreeeeeeeeeeeeemm')
+***********************************************************************************************************************************************************************************
 
 
 
