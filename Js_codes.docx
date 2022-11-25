@@ -535,7 +535,14 @@ function missingElement(arr){
 }
 missingElement([1,2,6])
 **********************************************************************************************************************************************************************************
-
+Code 40: To find kth smallest or largest element in an array
+function finfkthElement(arr,num){
+  arr=arr.sort((a,b)=>{return a-b})
+  console.log("kth smallest",arr[num-1]); //output:"kth smallest" 3
+  console.log("kth largest",arr[arr.length-num]) //output:"kth largest" 5
+}
+finfkthElement([2,3,7,4,1,5,6],3)
+**********************************************************************************************************************************************************************************
 
 
 
