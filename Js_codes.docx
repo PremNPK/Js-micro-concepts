@@ -561,7 +561,21 @@ function frequencySort(str){
 }
 frequencySort("ccAAAABBBdddddddddd")
 ***********************************************************************************************************************************************************************************
-
+Code 42: To find the OCCURANCE of the character
+function occuranceChar(str){
+  let map={}
+  for(var letter of str){
+    map[letter]=map[letter] ?(map[letter]+1):1
+  }
+  console.log(map) //output:{
+  A: 5,
+  c: 2,
+  e: 2,
+  f: 4
+}
+}
+occuranceChar("ccAAAAAffffee")
+************************************************************************************************************************************************************************************
 
 
 
