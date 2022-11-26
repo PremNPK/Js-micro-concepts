@@ -576,7 +576,7 @@ function occuranceChar(str){
 }
 occuranceChar("ccAAAAAffffee")
 ************************************************************************************************************************************************************************************
- Code 43: Permutation
+ Code 43: Permutation // Need to debug
  let perm=(str,result)=>{
   if(str.length==0){
     console.log(result) //output:"let" "lte" "elt" "etl" "tle" "tel"
