@@ -583,7 +583,8 @@ occuranceChar("ccAAAAAffffee")
     return
   }
   for(let i=0;i<str.length;i++){
-    let res=str.substring(0,i)+str.substring(i+1)
+    let res=str.substring(0,i)+str.substring(i+1) 
+    console.log("finalresult",result+str[i])  //l//le//let  //lt//lte  //e//el//elt  //et//etl  //t//tl//tle  //te//tel 
     perm(res,result+str[i])
   }
 }
