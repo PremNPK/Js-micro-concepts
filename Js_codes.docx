@@ -48,7 +48,7 @@ function longestWord(){
     console.log(word) 
     if(word.length > longest.length)
     {
-      longest=word
+      longest=word;
     }    
   }
   return longest.length
