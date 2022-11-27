@@ -18,7 +18,7 @@ Code 3:String reverse
 function letterReverse(){
   var str="I love bangalore"
   let result=str.split('').reverse().join('')
-  return result
+  return result;
 }
 console.log(letterReverse()) //output:"erolagnab evol I"
 ************************************************************************************************************************************************************************
