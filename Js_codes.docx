@@ -629,6 +629,19 @@ val.sort(function(a,b){
     return 0
 })
 console.log(val)  //output:[1, 2, 4, 5, 9, 0, 0, 0, 0]
+
+OR
+
+function moveZeroes(arr){
+  for(var i=0;i<arr.length-1;i++){
+    if(arr[i]===0){
+      var temp=arr.splice(i,1)
+      arr.push(temp[0])
+    }
+  }
+  return arr
+}
+console.log(moveZeroes([1,0,4,8,6,0,8,3,39,0])) //output:[1, 4, 8, 6, 8, 3, 39, 0, 0, 0]
 *****************************************************************************************************************************************************************************************
 
 
