@@ -656,7 +656,23 @@ function calSum(arr){
 }
 console.log(calSum([1,2,[3,[4,5],6,7]]))  //output:28
 ******************************************************************************************************************************************************************************************
-
+Code 48: To check weather perfect number or not
+function numPerfect(num){
+  let temp=0
+  for(let i=0;i<=num/2;i++){
+    if(num%i==0){
+      temp+=i
+    }
+  }
+  if(temp===num &&temp!=0){
+    console.log("It's a perfect number")
+  }
+  else{
+    console.log("The number is not perfect number")
+  }
+}
+numPerfect(28)
+******************************************************************************************************************************************************************************************
 
 
 
