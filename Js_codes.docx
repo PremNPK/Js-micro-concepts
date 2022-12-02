@@ -678,7 +678,24 @@ let today=new Date()
 let date=today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate()
 console.log(date)   //output:"2022-12-2"
 ******************************************************************************************************************************************************************************************
-
+Code 50: String Compression (Microsoft, Amazon etc)
+function stringCompression(str){
+  if(str.length===0){
+    console.log('Please enter a valid string')
+  }
+  let output='';
+  let count=0;
+  for(let i=0;i<str.length;i++){
+    count++
+    if(str[i]!=str[i+1]){
+      output +=str[i] + count;
+      count=0;
+    }
+  }
+  console.log( output)    //output:"a2p4k5d5n4"
+}
+stringCompression('aappppkkkkkdddddnnnn')
+*******************************************************************************************************************************************************************************************
 
 
 
