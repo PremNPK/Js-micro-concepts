@@ -696,7 +696,35 @@ function stringCompression(str){
 }
 stringCompression('aappppkkkkkdddddnnnn')
 *******************************************************************************************************************************************************************************************
-
+Code 51:Find triplets whose sum is zero
+function findTriplets(arr,n){
+  arr=arr.sort()
+  for(let i=0;i<arr.length;i++){
+    j=i+1
+    k=arr.length-1
+    while(j<k){
+    if(arr[i]+arr[j]+arr[k]<0){
+      j++
+    }
+    else if(arr[i]+arr[j]+arr[k]>0){
+      k--
+    }
+    else{
+      if(arr[i]+arr[j]<0){
+      console.log(arr[i]+"+"+arr[j]+"= -"+arr[k])
+      }
+      else{
+        console.log(arr[i]+"+"+arr[j]+"= "+arr[k])
+      }
+      j++
+      k--
+    }
+  }
+}
+}
+var arr= [-1, -4, -9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+findTriplets(arr,0)
+******************************************************************************************************************************************************************************************
 
 
 
