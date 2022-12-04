@@ -737,7 +737,11 @@ findTriplets(arr,0)   //output:"-1+-4= -5"
 Code 52:Convert Array into object
 let val=['Prem','Surya','Raju'];
 var updateObj={...val};
-console.log(updateObj)
+console.log(updateObj)     //output:{
+  0: "Prem",
+  1: "Surya",
+  2: "Raju"
+}
 ******************************************************************************************************************************************************************************************
 
 
